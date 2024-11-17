@@ -6,38 +6,50 @@
   <link href="src/output.css" rel="stylesheet">
 </head>
 <body>
-  <header id="header" class="p-0 m-0 bg-orange-100 w-full sm:h-24 h-20 grid grid-flow-col grid-cols-12 px-5 sm:py-1 py-3 gap-2 break-inside-avoid-page">
-    <div class="sm:col-span-1 col-span-4"><img src="src/images/logo_png.png" alt="this is a logo" class="sm:h-24 h-16 sm:w-auto sm:min-w-20 min-w-16"></div>
-    <div class="sm:col-span-1 sm:text-left text-center sm:ml-0 ml-4 sm:py-3 py-1 col-span-8"><h1 class="font-serif sm:text-3xl text-2xl min-w-14 fixed" style="color:#FDB316;">Aroodha <br> Foundation</h1></div>
-    <div class="sm:col-span-8">
-        <ul class="hidden flex-row md:flex text-center font-bold text-xl sm:grid sm:grid-flow-col grid-cols-6 justify-evenly py-8 mx-0 ">
-            <li class="sm:col-span-1"><a href="">Home</a></li>
-            <li class="sm:col-span-1"><a href="">About</a></li>
-            <li class="sm:col-span-1"><a href="">Founder</a></li>
-            <li class="sm:col-span-1"><a href="">Programs</a></li>
-            <li class="sm:col-span-1"><a href="">Events</a></li>
-            <li class="sm:col-span-1"><a href="">Contact Us</a></li>
-        </ul>
+  <div>
+    <header id="header" class="p-0 m-0 bg-orange-100 w-full sm:h-24 h-20 grid grid-flow-col grid-cols-12 px-5 sm:py-1 py-3 gap-2 break-inside-avoid-page">
+      <div class="sm:col-span-1 col-span-4"><img src="src/images/logo_png.png" alt="this is a logo" class="sm:h-24 h-16 sm:w-auto sm:min-w-20 min-w-16"></div>
+      <div class="sm:col-span-1 sm:text-left text-center sm:ml-0 ml-4 sm:py-3 py-1 col-span-8"><h1 class="font-serif sm:text-3xl text-2xl min-w-14 fixed" style="color:#FDB316;">Aroodha <br> Foundation</h1></div>
+      <div class="sm:col-span-8">
+          <ul class="hidden flex-row md:flex text-center font-bold text-xl sm:grid sm:grid-flow-col grid-cols-6 justify-evenly py-8 px-36 ">
+              <li class="sm:col-span-1"><a href="">Home</a></li>
+              <li class="sm:col-span-1"><a href="">About</a></li>
+              <li class="sm:col-span-1"><a href="">Founder</a></li>
+              <li class="sm:col-span-1"><a href="">Programs</a></li>
+              <li class="sm:col-span-1"><a href="">Events</a></li>
+              <li class="sm:col-span-1"><a href="">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="sm:flex sm:gap-2 sm:col-span-2 hidden py-8 sm:ml-20">
+        <div class="items-end"><button class="bg-red-400 font-bold w-20 hover:bg-red-800 hover:text-white"><a href="#">DONATE</a></button></div>
+        <div class="items-end"><button class="bg-red-400 font-bold w-28 hover:bg-red-800 hover:text-white"><a href="#">Login|Signup</a></button></div>
+      </div>
+      <div id="menu" class="sm:hidden w-7 py-5 mr-2"><button onclick="showMenu()" style="transition: transform 0.5s;" class="focus:rotate(90)"><img src="src/images/menu.png" alt="menu" class="mix-blend-multiply w-28"></button></div>
+    </header>
+    <div id="mobileMenu" style="display: none;" class="grid-flow-row h-auto z-30 w-full bg-orange-200 ">
+      <ul class="grid grid-flow-col text-center font-bold sm:hidden justify-between m-0 border text-black text-sm">
+        <li class=""><a href="">Home</a></li>
+        <li class=""><a href="">About</a></li>
+        <li class=""><a href="">Founder</a></li>
+        <li class=""><a href="">Programs</a></li>
+        <li class=""><a href="">Events</a></li>
+        <li class=""><a href="">Contact Us</a></li>
+    </ul>
     </div>
-    <div class="sm:flex sm:gap-2 sm:col-span-2 hidden py-8 sm:ml-24">
-      <div class="items-end"><button class="bg-red-400 font-bold w-20 hover:bg-red-800 hover:text-white"><a href="#">DONATE</a></button></div>
-      <div class="items-end"><button class="bg-red-400 font-bold w-28 hover:bg-red-800 hover:text-white"><a href="#">Login|Signup</a></button></div>
-    </div>
-    <div id="menu" class="sm:hidden w-7 py-5 mr-2"><img src="src/images/menu.png" alt="menu" ></div>
-  </header>
-  <div id="header" class="p-0 m-0 bg-slate-50 w-full sm:h-24 h-16 grid grid-flow-col grid-cols-12 px-5 py-1 gap-2 border-5 text-center">
-    <div class="border">1</div>
-    <div class="border">2</div>
-    <div class="border">3</div>
-    <div class="border">4</div>
-    <div class="border">5</div>
-    <div class="border">6</div>
-    <div class="border">7</div>
-    <div class="border">8</div>
-    <div class="border">9</div>
-    <div class="border">10</div>
-    <div class="border">11</div>
-    <div class="border">12</div>
   </div>
+
 </body>
+<script>
+  let mobile_menu = document.getElementById('mobileMenu')
+  function showMenu(){
+    if(mobile_menu.style.display=="grid"){
+      document.getElementById('menu').style.transform = "rotate(90)"
+      mobile_menu.style.display = "none"
+    }
+    else{
+      document.getElementById('menu').style.transform = "rotate(90)"
+      mobile_menu.style.display = "grid"
+    }
+  }
+</script>
 </html>
