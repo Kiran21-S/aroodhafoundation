@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
   <div>
     <header id="header" class="p-0 m-0 bg-orange-100 w-full sm:h-24 h-20 grid grid-flow-col grid-cols-12 px-5 sm:py-1 py-3 gap-2">
-      <div class="sm:col-span-1 col-span-4"><img src="src/images/logo_png.png" alt="this is a logo" class="sm:h-24 h-16 sm:w-auto sm:min-w-20 min-w-16"></div>
-      <div class="sm:col-span-1 sm:text-left text-center sm:ml-0 ml-4 sm:py-3 py-1 col-span-8"><h1 class="font-serif sm:text-3xl text-2xl min-w-14 fixed" style="color:#FDB316;">Aroodha <br> Foundation</h1></div>
+      <div class="sm:col-span-1 col-span-3"><img src="src/images/logo_png.png" alt="this is a logo" class="sm:h-24 h-16 sm:w-auto sm:min-w-20 min-w-16"></div>
+      <div class="sm:col-span-1 sm:text-left text-center sm:ml-0 ml-4 sm:py-3 py-1 col-span-8"><h1 class="font-yatra-one-regular sm:text-3xl text-2xl min-w-14 " style="color:#FDB316;">Aroodha <br> Foundation</h1></div>
       <div class="sm:col-span-8">
           <ul class="hidden flex-row text-center font-bold text-xl sm:grid sm:grid-flow-col grid-cols-6 justify-evenly py-8 px-36 ">
               <li class="sm:col-span-1"><a href="">Home</a></li>
@@ -27,7 +32,7 @@
       <div id="menu" class="sm:hidden py-3"><button onclick="showMenu()" class="rotate-90 duration-500 mix-blend-multiply"><img src="src/images/menu.png" alt="menu" class=" w-7"></button></div>
     </header>
     <div id="mobileMenu" style="display: none; " class="grid-flow-row h-auto z-30 w-full bg-orange-100">
-      <ul class="grid grid-flow-col text-center font-bold sm:hidden justify-between m-0 text-black text-sm">
+      <ul class="grid grid-flow-col text-center font-bold sm:hidden justify-between m-0 text-black text-sm px-4">
         <li class=""><a href="">Home</a></li>
         <li class=""><a href="">About</a></li>
         <li class=""><a href="">Founder</a></li>
@@ -36,6 +41,24 @@
         <li class=""><a href="">Contact Us</a></li>
     </ul>
     </div>
+  </div>
+  <div class="carousel" data-carousel>
+    <button class="carousel-button prev" data-carousel-button="prev">'<'</button>
+    <button class="carousel-button next" data-carousel-button="next">'>'</button>
+    <ul data-slides>
+      <li class="slide" data-active>
+        <img src="src/images/one.jpg" alt="Image #1">
+      </li>
+      <li class="slide">
+        <img src="src/images/two.jpg" alt="Image #2">
+      </li>
+      <li class="slide">
+        <img src="src/images/three.jpg" alt="Image #3">
+      </li>
+      <li class="slide">
+        <img src="src/images/four.jpg" alt="Image #4">
+      </li>
+    </ul>
   </div>
 
 </body>
