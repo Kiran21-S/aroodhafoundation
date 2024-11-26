@@ -566,12 +566,48 @@ video {
   grid-column: span 8 / span 8;
 }
 
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-9 {
+  grid-column: span 9 / span 9;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .m-0 {
   margin: 0px;
 }
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.-ml-0 {
+  margin-left: -0px;
+}
+
+.-ml-2 {
+  margin-left: -0.5rem;
+}
+
+.-ml-7 {
+  margin-left: -1.75rem;
 }
 
 .grid {
