@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="src/styles.css">
   <script src="src/index.js" defer></script>
 </head>
-<body>
-  <div>
-    <header id="header" class="p-0 m-0 bg-orange-100 w-full sm:h-24 h-20 grid grid-flow-col grid-cols-12 px-5 sm:py-1 py-3 gap-2">
+<body class="font-yatra bg-yellow-100">
+  <div class="">
+    <header id="header" class="p-0 m-0 bg-yellow-100 w-full sm:h-24 h-20 grid grid-flow-col grid-cols-12 px-5 sm:py-1 py-3 gap-2">
       <div class="sm:col-span-1 col-span-2"><img src="src/images/logo_png.png" alt="this is a logo" class="sm:h-24 h-16 sm:w-auto sm:min-w-20 min-w-16"></div>
-      <div class="sm:col-span-1 sm:text-left text-center sm:ml-0 ml-3 sm:py-3 py-1 col-span-9"><h1 class="font-yatra-one-regular sm:text-3xl text-2xl min-w-14 " style="color:#FDB316;">Aroodha <br> Foundation</h1></div>
+      <div class="sm:col-span-1 sm:text-left text-center sm:ml-0 ml-3 sm:py-3 py-1 col-span-9 sm:block hidden"><h1 class="font-yatra sm:text-3xl text-2xl min-w-14" style="color:#FF7700;">Aroodha <br> Foundation</h1></div>
       <div class="sm:col-span-8">
           <ul class="hidden flex-row text-center font-bold text-xl sm:grid sm:grid-flow-col grid-cols-6 justify-evenly py-8 px-36 ">
               <li class="sm:col-span-1"><a href="">Home</a></li>
@@ -25,9 +25,9 @@
               <li class="sm:col-span-1"><a href="">Contact Us</a></li>
           </ul>
       </div>
-      <div class="sm:flex sm:gap-2 sm:col-span-1 hidden py-8 sm:ml-20">
-        <div class="items-end"><button class="bg-red-400 font-bold w-20 hover:bg-red-800 hover:text-white"><a href="#">DONATE</a></button></div>
-        <div class="items-end"><button class="bg-red-400 font-bold w-28 hover:bg-red-800 hover:text-white"><a href="#">Login|Signup</a></button></div>
+      <div class="flex sm:gap-2 sm:col-span-1 py-5 sm:py-8 sm:ml-20 col-span-9 gap-2 ml-4">
+        <div class="items-end"><button class="bg-red-400 font-bold w-20 hover:bg-red-800 hover:text-white rounded-lg"><a href="#">DONATE</a></button></div>
+        <div class="items-end"><button class="bg-red-400 font-bold w-28 hover:bg-red-800 hover:text-white rounded-lg"><a href="#">Login|Signup</a></button></div>
       </div>
       <div id="menu" class="sm:hidden py-3"><button onclick="showMenu()" class="rotate-90 duration-500 mix-blend-multiply"><img src="src/images/menu.png" alt="menu" class=" w-7"></button></div>
     </header>
@@ -60,7 +60,13 @@
       </li>
     </ul>
   </div>
-
+  <div class="h-full pb-20 bg-yellow-200 pt-40">
+    <span class="text-center underline"><h3 class="text-5xl after:" style="color:#FF7700;">About</h3></span>
+    <div class="flex">
+      <img src="src/images/about.jpeg" alt="about the organization" class="h-auto p-10">
+      <p class="text-wrap  p-20 px-40 mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, recusandae aperiam tempora eos corrupti provident quibusdam illum asperiores quas omnis unde molestias molestiae ducimus dolorum beatae! Pariatur, aliquid animi sed voluptates in, iusto dolor mollitia rerum commodi neque sunt ipsam est eveniet unde amet veniam atque placeat culpa necessitatibus, cum consequatur eligendi porro? Dolores hic saepe quaerat dolore pariatur in dicta illum unde culpa voluptate vel odio, sit amet iste excepturi molestias ut minima libero, fuga omnis rerum aspernatur! Sit est ducimus consequatur reprehenderit vel iusto, dolorum aperiam eligendi minima delectus deleniti veritatis? Obcaecati repellat laudantium culpa. Qui, culpa quasi!</p>
+    </div>
+  </div>
 </body>
 <script>
   let mobile_menu = document.getElementById('mobileMenu')
