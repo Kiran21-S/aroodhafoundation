@@ -904,6 +904,20 @@ video {
     margin: 11rem;
   }
 
+  .sm\:m-60{
+    margin: 15rem;
+  }
+
+  .sm\:mx-44{
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+
+  .sm\:mx-28{
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
   .sm\:ml-0{
     margin-left: 0px;
   }
@@ -938,6 +952,18 @@ video {
 
   .sm\:mr-56{
     margin-right: 14rem;
+  }
+
+  .sm\:ml-44{
+    margin-left: 11rem;
+  }
+
+  .sm\:mr-44{
+    margin-right: 11rem;
+  }
+
+  .sm\:mr-40{
+    margin-right: 10rem;
   }
 
   .sm\:block{
